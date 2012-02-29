@@ -1,4 +1,4 @@
 <?php
-echo phpinfo();
+echo 'git test : hello world !';
 ?>
 
