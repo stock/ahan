@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ctl</title>
+</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+	var f=0;
+	function fn()
+	{
+		if (f==0)
+		{
+			parent.document.getElementsByTagName('frameset')[0].cols='0%,3%,*';
+			document.getElementById('ctl').innerHTML='→';
+			document.getElementById('ctl').title="显示列表";
+			f=1;
+		}else
+		{
+			parent.document.getElementsByTagName('frameset')[0].cols='22%,3%,*';
+			document.getElementById('ctl').innerHTML='←';
+			document.getElementById('ctl').title="隐藏列表";
+			f=0;
+		}
+	}
+//-->
+</SCRIPT>
+</head>
+<body style="background-color: F5F5F5;margin:0px;border:0px;">
+<a href="#" id="ctl" onclick="fn()" style="text-decoration: none;color:red;" title="隐藏列表">←</a>
+</body>
+</html>

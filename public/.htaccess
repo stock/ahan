@@ -1,0 +1,20 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule wap/list/(\d+)/(\d+)/ /wap/list.php?fojing=$1&p=$2
+RewriteRule wap/list/ /wap/list.php
+RewriteRule wap/about/ /wap/about.php
+RewriteRule wap/aboutahan/ /wap/aboutahan.php
+
+RewriteRule wap/view/(\d+)/(\d+)/(.+) /wap/view.php?fojing=$1&id=$2&keytext=$3
+RewriteRule wap/view/(\d+)/(\d+)/ /wap/view.php?fojing=$1&id=$2
+
+RewriteRule list/ /list.php
+RewriteRule about/ /about.php
+RewriteRule aboutahan/ /aboutahan.php
+
+RewriteRule view/(\d+)/(\d+)/(.+) /view.php?fojing=$1&id=$2&keytext=$3
+RewriteRule view/(\d+)/(\d+)/ /view.php?fojing=$1&id=$2
+
+#ErrorDocument 404 /404.php
